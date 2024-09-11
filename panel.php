@@ -22,9 +22,10 @@
             <br><br>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="panel.php">Home</a></li>
                     <li><a href="#">Posts</a></li>
                     <li><a href="#">Write</a></li>
+                    <li><a href="settings.php">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
                     <li><?php echo "<b>".htmlspecialchars($_SESSION['username'])."</b>"; ?></li>
                 </ul>

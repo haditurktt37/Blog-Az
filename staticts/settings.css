@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #111;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 20px; /* فاصله یکسان از چپ و راست */
+    box-sizing: border-box; /* بهینه‌سازی باکس‌بندی */
+}
+
+.container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* عرض 100 درصدی */
+    padding: 15px;
+    background: #333;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* اطمینان از تطابق padding و اندازه باکس */
+    margin-bottom: 10px; /* فاصله از پایین */
+}
+
+.form-group input[type="file"] {
+    background: none;
+}
+
+.form-group input:disabled {
+    background: #555;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%; /* دکمه هم به اندازه عرض کل فرم باشد */
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.form-group textarea {
+    resize: none; /* غیرفعال کردن تغییر اندازه */
+    height: 100px; /* ارتفاع ثابت */
+}
